@@ -8,12 +8,29 @@ Se utiliza Node con el framework de IBM Loopback versión 4.
 <br>
 
 ## Despliegue
-TODO: documentación técnica de arranque
+#### Desplegar en consola
+Desplegar el proyecto en local ejecutando desde el directorio raiz del proyecto el siguiente comando:
+> $ npm start
+
+<br>
+
+#### Desplegar en docker
+Desplegar el proyecto en un contenedor Docker local ejecutando desde el directorio raiz el siguiente comando:
+> $ docker run -p 3000:3000 .
 
 <br>
 
 ## Explorar la API
-TODO: documentación acerca de la API expuesta
+#### Información técnica de la API
+Se exponen los recursos de la OpenAPI en la siguiente ubicación:
+> http://localhost:3000/openapi.json
 
-<br>
+Esto muestra información técnica sobre la API expuesta (REST) conforme al estándar openAPI.
+
+
+#### Acceso a recursos con Swagger
+Se exponen el acceso a la API con REST mediante la utilidad de Swagger en la siguiente ubicación:
+> http://localhost:3000/explorer/
+
+Esto permite interactuar o realizar peticiones a la API mediante esta utilidad gráfica.
 
