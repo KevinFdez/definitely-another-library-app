@@ -6,4 +6,7 @@ Esta carpeta contiene el proyecto `library-frontend`, el cual expone una interfa
 <br>
 
 ## Despliegue
-TODO: documentación técnica de arranque
+Para desplegar en local utilizar el siguiente comando:
+> $ ng serve
+
+Esto levanta el webapp y lo hace visible en la ubicación `http://localhost:4200/`.

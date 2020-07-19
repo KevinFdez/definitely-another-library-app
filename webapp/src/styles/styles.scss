@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 0.9em;
+}
+
+// No permite selección de objetos visuales con el puntero
+@mixin not-selectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1,
+mat-label,
+a,
+button,
+th,
+mat-paginator,
+mat-icon {
+  @include not-selectable;
+}
