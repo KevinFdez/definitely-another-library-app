@@ -5,6 +5,9 @@ import { MaterialModule } from '../modules/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from '../app-routing.module';
 import { HttpModule } from './http/http.module';
+import { HeaderModule } from './components/header/header.module';
+import { MenuSidebarComponent } from './components/sidebar/menu-sidebar/menu-sidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -13,10 +16,17 @@ import { HttpModule } from './http/http.module';
 		CommonModule,
 		HttpClientModule,
 		AppRoutingModule,
-		HttpModule
+		HttpModule,
+		HeaderModule
+	],
+	declarations: [
+		SidebarComponent,
+		MenuSidebarComponent
 	],
 	exports: [
-		HttpModule
+		HttpModule,
+		SidebarComponent,
+		HeaderModule
 	]
 })
 export class CoreModule { }

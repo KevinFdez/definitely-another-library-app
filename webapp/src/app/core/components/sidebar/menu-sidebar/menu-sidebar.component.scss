@@ -1,0 +1,7 @@
+@import 'src/styles/library-app-theme.scss';
+
+.active-list-item {
+  color: mat-color($library-frontend-primary, A200) !important;
+  background: mat-color($library-frontend-primary, darker);
+  font-weight: 500;
+}
