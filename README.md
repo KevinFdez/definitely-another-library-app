@@ -9,7 +9,7 @@ El backend expone una API REST que implementa CRUD para operar con los modelos d
 <br>
 
 ### Tecnologías involucradas
-La tecnología utilizada es Angular, en su versión 9, para cubrir el frontend y StrongLoop Loopback, en su versión 4, para atender a peticiones desde el front a modo de API.
+La tecnología utilizada es Angular, en su versión 10, para cubrir el frontend y StrongLoop Loopback, en su versión 4, para atender a peticiones desde el front a modo de API.
 
 <br>
 
