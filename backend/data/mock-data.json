@@ -1,0 +1,21 @@
+{
+	"ids": {
+		"Author": 4,
+		"Book": 7
+	},
+	"models": {
+		"Author": {
+			"1": "{\"firstName\":\"Miguel\",\"lastName\":\"Lambordia\",\"id\":1}",
+			"2": "{\"firstName\":\"Bartolomé\",\"lastName\":\"Hendrix\",\"id\":2}",
+			"3": "{\"id\":3,\"firstName\":\"Juan\",\"lastName\":\"de las nieves\"}"
+		},
+		"Book": {
+			"1": "{\"name\":\"Historias de un elfo\",\"isbn\":\"1234-abcd-888\",\"authorId\":1,\"id\":1}",
+			"2": "{\"name\":\"El anochecer por la mañana\",\"isbn\":\"5678-abcd-777\",\"authorId\":1,\"id\":2}",
+			"3": "{\"name\":\"De viaje con traje\",\"isbn\":\"7468-abcd-333\",\"authorId\":1,\"id\":3}",
+			"4": "{\"name\":\"¡Mira, sin manos mama!\",\"isbn\":\"983-abcd-777\",\"authorId\":2,\"id\":4}",
+			"5": "{\"name\":\"Loopback, como programar y no morir en el intento\",\"isbn\":\"623-abcd-999\",\"authorId\":3,\"id\":5}",
+			"6": "{\"name\":\"Para que quieres saber eso, jaja saludos\",\"isbn\":\"832-abcd-444\",\"authorId\":3,\"id\":6}"
+		}
+	}
+}

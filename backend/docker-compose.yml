@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+  backend:
+    container_name: backend
+    restart: on-failure
+    build: .
+    image: library-backend:node-10.17.0-alpine3.9
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST=backend
+      - PORT=3000
+      - PROTOCOL=http
+      - DISABLE_EXPLORER=false
+      - NODE_ENV=development
+    volumes:
+      - backend-data:/home/node/app/
+    networks:
+      library-network:
+        aliases:
+          - backend
+    healthcheck:
+      test: node -pe 'if(JSON.parse(process.argv[1]).status == "UP"){ process.exit(0) } else { process.exit(1) }' $$(curl -f http://backend:3000/service/health)
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  backend-data:
+    name: library-backend-data
+
+networks:
+  library-network:
