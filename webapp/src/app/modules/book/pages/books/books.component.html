@@ -1,5 +1,15 @@
 <div class="main-layout">
 
-  <h1>Listado de Libros</h1>
+  <h1 i18n="book page list title@@bookPageListTitle">Listado de Libros</h1>
+
+  <div class="buttons-box">
+    <div>
+      <button mat-raised-button color="accent" [routerLink]="['/books/create']" i18n="book page new button@@bookPageNewButton">Añadir nuevo</button>
+      <button mat-raised-button color="accent" [disabled]="editBtnDisabled" (click)="onClickEditBookBtn()" i18n="book page edit button@@bookPageEditButton">Editar</button>
+      <button mat-raised-button color="accent" [disabled]="deleteBtnDisabled" (click)="onClickDeleteBookBtn()" i18n="book page delete button@@bookPageDeleteButton">Eliminar</button>
+    </div>
+  </div>
+
+  <app-book-table (selectedBook)="onBookSelected($event)"></app-book-table>
 
 </div>

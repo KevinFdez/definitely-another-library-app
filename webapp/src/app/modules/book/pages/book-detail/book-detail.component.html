@@ -1,0 +1,67 @@
+<div class="main-layout">
+
+  <button mat-button color="accent" [routerLink]="['/list']">
+    <mat-icon class="back-icon" aria-hidden="false" aria-label="Back button">arrow_back_ios</mat-icon>
+    <span i18n="book detail page back button@@bookDetailPageBackButton">Volver</span>
+  </button>
+
+  <div class="inner-box">
+
+    <h1 *ngIf="undefined === book" i18n="book detail page new title@@bookDetailPageNewTitle">Nuevo libro
+    </h1>
+    <h1 *ngIf="undefined != book && isFormEnabled" i18n="book detail page edit title@@bookDetailPageEditTitle">Editar
+      libro {{book.id}}</h1>
+    <h1 *ngIf="undefined != book && !isFormEnabled" i18n="book detail page edit title@@bookDetailPageEditTitle">Ver
+      libro {{book.id}}</h1>
+
+    <div class="form-content-box">
+      <mat-icon aria-hidden="false" aria-label="Book icon">book</mat-icon>
+
+      <form [formGroup]="bookForm">
+
+        <mat-form-field>
+          <mat-label i18n="book detail page name field label@@bookDetailPageNameFieldLabel">Nombre</mat-label>
+          <input matInput type="text" formControlName="name" [readonly]="!isFormEnabled">
+          <mat-error *ngIf="bookForm.controls.name.errors?.required" i18n="book detail page name field required error@@bookDetailPageNameFieldRequiredError">
+            Campo requerido
+          </mat-error>
+          <mat-error *ngIf="bookForm.controls.name.errors?.maxlength" i18n="book detail page name field maxlength error@@bookDetailPageNameFieldMaxLengthError">
+            El nombre no debe exceder de 50 carácteres
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label i18n="book detail page isbn field label@@bookDetailPageIsbnFieldLabel">ISBN
+          </mat-label>
+          <input matInput type="text" formControlName="isbn" [readonly]="!isFormEnabled">
+          <mat-error *ngIf="bookForm.controls.isbn.errors?.required" i18n="book detail page isbn field required error@@bookDetailPageIsbnFieldRequiredError">
+            Campo requerido
+          </mat-error>
+          <mat-error *ngIf="bookForm.controls.isbn.errors?.maxlength" i18n="book detail page isbn field maxlength error@@bookDetailPageIsbnFieldMaxLengthError">
+            El ISBN no deben exceder de 50 carácteres
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label i18n="book detail page author field label@@bookDetailPageAuthorFieldLabel">
+            Autor</mat-label>
+          <mat-select formControlName="authorId" [disabled]="!isFormEnabled">
+            <mat-option *ngFor="let author of authors" [value]="author.id">
+              {{author.firstName}} {{author.lastName}}
+            </mat-option>
+          </mat-select>
+          <mat-error i18n="book detail page author field required error@@bookDetailPageAuthorFieldRequiredError">
+            Campo requerido
+          </mat-error>
+        </mat-form-field>
+
+      </form>
+    </div>
+
+    <div *ngIf="isFormEnabled" class="action-buttons">
+      <button mat-raised-button color="accent" (click)="save()" [disabled]="bookForm.invalid" i18n="book detail page save button@@bookDetailPageSaveButton">Guardar</button>
+    </div>
+
+  </div>
+
+</div>
