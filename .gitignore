@@ -114,3 +114,7 @@ dist
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+# System Files
+.DS_Store
+Thumbs.db
