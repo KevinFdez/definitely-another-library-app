@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="loadingOverlay" datatype="html">
+        <source>
+        Cargando
+      </source>
+	  <target>Loading</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/sidebar/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">loading overlay</note>
+      </trans-unit>
+      <trans-unit id="moduleLoader" datatype="html">
+        <source>
+		Cargando Módulo
+		</source>
+		<target>Loading Module</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/sidebar/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">module loader</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorTitle" datatype="html">
+        <source>Crear nuevo autor</source>
+		<target>Create new author</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author title</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorFirstNameContent" datatype="html">
+        <source>Nombre del autor</source>
+		<target>Author's first name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author firstname content</note>
+      </trans-unit>
+	  <trans-unit id="dialogNewAuthorLastNameContent" datatype="html">
+        <source>Apellidos del autor</source>
+		<target>Author's last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author lastname content</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorFirstNameError" datatype="html">
+        <source>
+        Campo requerido
+      </source>
+	  <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author firstname field required error</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorFirstNameMaxlengthError" datatype="html">
+        <source>
+        El nombre no debe exceder de 50 carácteres
+      </source>
+	  <target>The first name must not exceed 50 characters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author firstname field maxlength error</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorLastNameError" datatype="html">
+        <source>
+        Campo requerido
+      </source>
+	  <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author lastname field required error</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorLastNameMaxlengthError" datatype="html">
+        <source>
+        Los apellidos no deben exceder de 50 carácteres
+      </source>
+	  <target>The last name must not exceed 50 characters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author lastname field maxlength error</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorCloseButton" datatype="html">
+        <source>Cancelar</source>
+		<target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author close button</note>
+      </trans-unit>
+      <trans-unit id="dialogNewAuthorOkButton" datatype="html">
+        <source>Crear</source>
+		<target>Create</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/dialog-create-author/dialog-create-author.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">dialog new author ok button</note>
+      </trans-unit>
+      <trans-unit id="bookNavLink" datatype="html">
+        <source>Libros</source>
+		<target>Books</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/sidebar/menu-sidebar/menu-sidebar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">book navigation item</note>
+      </trans-unit>
+      <trans-unit id="authorNavLink" datatype="html">
+        <source>Autores</source>
+		<target>Authors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/sidebar/menu-sidebar/menu-sidebar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">author navigation item</note>
+      </trans-unit>
+      <trans-unit id="authorsPageTitle" datatype="html">
+        <source>Listado de Autores</source>
+		<target>List of Authors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/pages/authors/authors.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">authors page title</note>
+      </trans-unit>
+      <trans-unit id="authorsPageCreateAuthorButton" datatype="html">
+        <source>Añadir nuevo</source>
+		<target>Add new</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/pages/authors/authors.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">authors page create author button</note>
+      </trans-unit>
+      <trans-unit id="firstNameColAuthorTable" datatype="html">
+        <source>Nombre</source>
+		<target>First name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/author-table/author-table.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">author table firstname col</note>
+      </trans-unit>
+	  <trans-unit id="lastNameColAuthorTable" datatype="html">
+        <source>Nombre</source>
+		<target>Last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/author/components/author-table/author-table.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">author table lastname col</note>
+      </trans-unit>
+      <trans-unit id="dialogDeleteBookTitle" datatype="html">
+        <source>Eliminar registro</source>
+		<target>ADelete record</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-dialog-delete/book-dialog-delete.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">dialog delete book title</note>
+      </trans-unit>
+      <trans-unit id="dialogDeleteBookContent" datatype="html">
+        <source>¿Seguro que desea eliminar el registro seleccionado?</source>
+		<target>Are you sure you want to delete the selected record?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-dialog-delete/book-dialog-delete.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">dialog delete book content</note>
+      </trans-unit>
+      <trans-unit id="dialogDeleteBookCloseButton" datatype="html">
+        <source>Cancelar</source>
+		<target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-dialog-delete/book-dialog-delete.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">dialog delete book close button</note>
+      </trans-unit>
+      <trans-unit id="dialogDeleteBookDeleteButton" datatype="html">
+        <source>Eliminar</source>
+		<target>Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-dialog-delete/book-dialog-delete.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">dialog delete book delete button</note>
+      </trans-unit>
+      <trans-unit id="bookPageListTitle" datatype="html">
+        <source>Listado de Libros</source>
+		<target>List of Books</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/books/books.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">book page list title</note>
+      </trans-unit>
+      <trans-unit id="bookPageNewButton" datatype="html">
+        <source>Añadir nuevo</source>
+		<target>Add new</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/books/books.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">book page new button</note>
+      </trans-unit>
+      <trans-unit id="bookPageEditButton" datatype="html">
+        <source>Editar</source>
+		<target>Modify</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/books/books.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">book page edit button</note>
+      </trans-unit>
+      <trans-unit id="bookPageDeleteButton" datatype="html">
+        <source>Eliminar</source>
+		<target>Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/books/books.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">book page delete button</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageBackButton" datatype="html">
+        <source>Volver</source>
+		<target>Back</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">book detail page back button</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageNewTitle" datatype="html">
+        <source>Nuevo libro</source>
+		<target>New book</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">book detail page new title</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageEditTitle" datatype="html">
+        <source>Editar libro <x id="INTERPOLATION" equiv-text="{{book.id}}"/></source>
+		<target>Modify book <x id="INTERPOLATION" equiv-text="{{book.id}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">book detail page edit title</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageNameFieldLabel" datatype="html">
+        <source>Nombre</source>
+		<target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">book detail page name field label</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageNameFieldRequiredError" datatype="html">
+        <source>
+            Campo requerido
+          </source>
+		  <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">book detail page name field required error</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageNameFieldMaxLengthError" datatype="html">
+        <source>
+            El nombre no debe exceder de 50 carácteres
+          </source>
+		  <target>The name must not exceed 50 characters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">book detail page name field maxlength error</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageIsbnFieldLabel" datatype="html">
+        <source>ISBN
+          </source>
+		  <target>ISBN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">book detail page isbn field label</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageIsbnFieldRequiredError" datatype="html">
+        <source>
+            Campo requerido
+          </source>
+		  <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">book detail page isbn field required error</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageIsbnFieldMaxLengthError" datatype="html">
+        <source>
+            El ISBN no deben exceder de 50 carácteres
+          </source>
+		  <target>
+            ISBN must not exceed 50 characters
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">book detail page isbn field maxlength error</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageAuthorFieldLabel" datatype="html">
+        <source>
+            Autor</source>
+		<target>Author</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">book detail page author field label</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageAuthorFieldRequiredError" datatype="html">
+        <source>
+            Campo requerido
+          </source>
+		  <target>Required field</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">book detail page author field required error</note>
+      </trans-unit>
+      <trans-unit id="bookDetailPageSaveButton" datatype="html">
+        <source>Guardar</source>
+		<target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/pages/book-detail/book-detail.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">book detail page save button</note>
+      </trans-unit>
+      <trans-unit id="bookTableNameCol" datatype="html">
+        <source>Nombre</source>
+		<target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-table/book-table.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">book table name col</note>
+      </trans-unit>
+      <trans-unit id="bookTableIsbnCol" datatype="html">
+        <source>ISBN</source>
+		<target>ISBN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/book/components/book-table/book-table.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">book table isbn col</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
