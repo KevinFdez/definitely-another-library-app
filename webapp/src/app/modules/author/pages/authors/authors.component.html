@@ -2,4 +2,12 @@
 
   <h1 i18n="authors page title@@authorsPageTitle">Listado de Autores</h1>
 
+  <div class="buttons-box">
+    <div>
+      <button mat-raised-button color="accent" (click)="onClickCreateAuthorBtn()" i18n="authors page create author button@@authorsPageCreateAuthorButton">Añadir nuevo</button>
+    </div>
+  </div>
+
+  <app-author-table></app-author-table>
+
 </div>

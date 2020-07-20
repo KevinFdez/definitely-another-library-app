@@ -55,9 +55,18 @@ export class BookDetailComponent implements OnInit, OnDestroy {
 	 */
 	private setViewMode(): void {
 		const editParam: string = this.route.snapshot.queryParamMap.get('edit');
-		console.log(editParam);
 		this.isFormEnabled = editParam !== null && editParam === 'false' ? false : true;
-		console.log(this.isFormEnabled);
+
+		if (this.isFormEnabled) {
+			this.bookForm.controls['name'].enable();
+			this.bookForm.controls['isbn'].enable();
+			this.bookForm.controls['authorId'].enable();
+		} else {
+			this.bookForm.controls['name'].disable();
+			this.bookForm.controls['isbn'].disable();
+			this.bookForm.controls['authorId'].disable();
+		}
+
 	}
 
 	/**

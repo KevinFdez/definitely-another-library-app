@@ -21,7 +21,7 @@
 
         <mat-form-field>
           <mat-label i18n="book detail page name field label@@bookDetailPageNameFieldLabel">Nombre</mat-label>
-          <input matInput type="text" formControlName="name" [readonly]="!isFormEnabled">
+          <input matInput type="text" formControlName="name">
           <mat-error *ngIf="bookForm.controls.name.errors?.required" i18n="book detail page name field required error@@bookDetailPageNameFieldRequiredError">
             Campo requerido
           </mat-error>
@@ -33,7 +33,7 @@
         <mat-form-field>
           <mat-label i18n="book detail page isbn field label@@bookDetailPageIsbnFieldLabel">ISBN
           </mat-label>
-          <input matInput type="text" formControlName="isbn" [readonly]="!isFormEnabled">
+          <input matInput type="text" formControlName="isbn">
           <mat-error *ngIf="bookForm.controls.isbn.errors?.required" i18n="book detail page isbn field required error@@bookDetailPageIsbnFieldRequiredError">
             Campo requerido
           </mat-error>
@@ -45,7 +45,7 @@
         <mat-form-field>
           <mat-label i18n="book detail page author field label@@bookDetailPageAuthorFieldLabel">
             Autor</mat-label>
-          <mat-select formControlName="authorId" [disabled]="!isFormEnabled">
+          <mat-select formControlName="authorId">
             <mat-option *ngFor="let author of authors" [value]="author.id">
               {{author.firstName}} {{author.lastName}}
             </mat-option>

@@ -72,6 +72,7 @@ export class BookTableComponent implements OnInit, OnDestroy {
 	ngOnDestroy() {
 		this.selectionSubscription.unsubscribe();
 		this.tableDataSourceSubscription.unsubscribe();
+		this.bookDataListenerSubscription.unsubscribe();
 	}
 
 	/**

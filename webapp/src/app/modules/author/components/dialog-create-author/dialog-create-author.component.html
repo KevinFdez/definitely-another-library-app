@@ -1,0 +1,38 @@
+<h1 mat-dialog-title i18n="dialog new author title@@dialogNewAuthorTitle">Crear nuevo autor</h1>
+
+<mat-dialog-content>
+
+  <form [formGroup]="authorForm">
+    <mat-form-field>
+      <mat-label i18n="dialog new author firstname content@@dialogNewAuthorFirstNameContent">Nombre del autor</mat-label>
+      <input matInput type="text" formControlName="firstName">
+      <mat-error *ngIf="authorForm.controls.firstName.errors?.required" i18n="dialog new author firstname field required error@@dialogNewAuthorFirstNameError">
+        Campo requerido
+      </mat-error>
+      <mat-error *ngIf="authorForm.controls.firstName.errors?.maxlength" i18n="dialog new author firstname field maxlength error@@dialogNewAuthorFirstNameMaxlengthError">
+        El nombre no debe exceder de 50 carácteres
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label i18n="dialog new author lastname content@@dialogNewAuthorLastNameContent">Apellidos del autor</mat-label>
+      <input matInput type="text" formControlName="lastName">
+      <mat-error *ngIf="authorForm.controls.lastName.errors?.required" i18n="dialog new author lastname field required error@@dialogNewAuthorLastNameError">
+        Campo requerido
+      </mat-error>
+      <mat-error *ngIf="authorForm.controls.lastName.errors?.maxlength" i18n="dialog new author lastname field maxlength error@@dialogNewAuthorLastNameMaxlengthError">
+        Los apellidos no deben exceder de 50 carácteres
+      </mat-error>
+    </mat-form-field>
+  </form>
+
+</mat-dialog-content>
+
+<br>
+<br>
+<br>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close i18n="dialog new author close button@@dialogNewAuthorCloseButton">Cancelar</button>
+  <button mat-button [mat-dialog-close]="authorForm.value" [disabled]="!authorForm.valid" i18n="dialog new author ok button@@dialogNewAuthorOkButton">Crear</button>
+</mat-dialog-actions>

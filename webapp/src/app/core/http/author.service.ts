@@ -71,7 +71,7 @@ export class AuthorService {
 	 * @param lastName apellidos del nuevo autor.
 	 * @returns Devuelve un observable que se resuelve para indicar que la acción ha sido completada.
 	 */
-	createAuthor(firstName: string, lastName: string, authorId: number): Observable<void> {
+	createAuthor(firstName: string, lastName: string): Observable<void> {
 		const interfaceBridge: Subject<any> = new Subject<any>();
 
 		const newAuthor: Author = {
